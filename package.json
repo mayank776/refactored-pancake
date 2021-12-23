@@ -1,0 +1,25 @@
+{
+  "name": "movie-management",
+  "version": "1.0.0",
+  "description": "imdb(esque) backend feature",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxhothead776/refactored-pancake.git"
+  },
+  "author": "mayank attri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxhothead776/refactored-pancake/issues"
+  },
+  "homepage": "https://github.com/maxhothead776/refactored-pancake#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.3"
+  }
+}
