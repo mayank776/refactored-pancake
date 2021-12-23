@@ -112,13 +112,13 @@ const updateMovie = async (req,res) => {
         }
 
         if(genre) {
-            if(!Object.prototype.hasOwnProperty.call(updateMovie, '$set')) updateMovie['$set'] = {}
+            if(!Object.prototype.hasOwnProperty.call(updateMovie, '$addToSet')) updateMovie['$addToSet'] = {}
             
             if(validator.isArray(genre)) {
-                updateMovie['$set']['genre'] = [genre]
+                updateMovie['$addToSet']['genre'] = {$each:[...genre]}
             }
             if(validator.isValidString(genre)) {
-                updateMovie['$set']['genre'] = genre
+                updateMovie['$addToSet']['genre'] = genre
             }
         }
 
